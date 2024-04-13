@@ -1,12 +1,31 @@
-# OwO Bot
+# OwO Bot Simplified
 
-[![Discord Bots](https://discordbots.org/api/widget/status/408785106942164992.svg)](https://discordbots.org/bot/408785106942164992) [![Discord Bots](https://discordbots.org/api/widget/servers/408785106942164992.svg)](https://discordbots.org/bot/408785106942164992) [![Discord Bots](https://discordbots.org/api/widget/lib/408785106942164992.svg)](https://discordbots.org/bot/408785106942164992)
-
-Here are the codes for OwO Bot! Feel free to submit an issue or open a pull request!
+A stripped down version of Discord-OwO-Bot for ease of self-hosting! This is a more of a faithful recreation than a 1:1 recreation since, although I think I have a better grasp on the codebase than most, I can't be bothered to try to understand the thoughts behind every line in the mostly undocumented project that is OwO Bot. 
 
 ## Self hosting
 
-This discord bot uses [MariaDB](https://mariadb.org/) and [Redis](https://redis.io/) for its databases. Some files may be missing due to security reasons and can be found [here](https://github.com/ChristopherBThai/Discord-OwO-Bot/tree/master/secret).
+__***This project is still a work in progress!!! This is not ready for use!!!***__
+
+1. Clone this repository
+2. Input imporant configurations in `config/config.json`
+3. Profit?!?!
+
+## Limitations
+
+* Most image generation features have been redone to have text output
+* Removed extraneous features specific to the main bot's environment
+    - Snail and stream websockets
+    - Logging features
+    - Connection to voting api
+    - Macro detection features (they weren't public anyway)
+* Most emojis have been replaced by the default emojis. This can be changed in the emoji config file in `config/emoji.json`.
+* For ease of self-hosting a simple file based/in memory database is used
+
+## Plans
+
+1. Make the project work.
+2. Implement simple QoL features that should be in the bot
+3. Implement a version of the legacy battle.
 
 ## License
 
@@ -24,7 +43,3 @@ Under the following terms:
 - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 
 More information can be found [here](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-## Contributing
-
-All merge requests are welcome! Just make sure to sign the [CLA](https://cla-assistant.io/ChristopherBThai/Discord-OwO-Bot) or else we cannot merge your changes.
